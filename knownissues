@@ -1,0 +1,2 @@
+Azure Loadbalancer issue on svc routing in Azure Kubernetes Services
+the issue is fixed now. The root cause was, microsoft/Loadbalancer was not creating the new rules while editing the svc, it is creating the new rules while recreating the svc after deleting the existing one.
